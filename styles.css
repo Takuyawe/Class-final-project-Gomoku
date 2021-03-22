@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 510px;
+  width: 580px;
+  background-color: rgb(250, 224, 202);
+  margin: 2rem 0 0 2rem;
+  border: 10px solid brown;
+}
+
+.square {
+  height: 35px;
+  width: 35px;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+.black {
+  display: block;
+  transform: translate(-10px, -10px);
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+.white {
+  display: block;
+  transform: translate(-10px, -10px);
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.display {
+  align-self: center;
+  margin-left: 5rem;
+  font-size: 1.5rem;
+  color: black;
+  padding: 1rem;
+  border-radius: 100px;
+}

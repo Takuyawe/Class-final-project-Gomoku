@@ -30,7 +30,7 @@ document.addEventListener('click', e => {
 function blackTurn(id) {
     if(squares[id].firstChild) {
         if(!squares[id].firstChild.classList.contains('black') && !squares[id].firstChild.classList.contains('white'))  
-        alert('Already taken!')
+        alert('そこには置けません!')
 
     } else putBlack(id)
 }
@@ -46,7 +46,7 @@ function putBlack(id) {
 function whiteTurn(id) {
     if(squares[id].firstChild) {
         if(!squares[id].firstChild.classList.contains('black') && !squares[id].firstChild.classList.contains('white')) 
-        alert('Already taken!')
+        alert('そこには置けません!')
 
     } else putWhite(id)
 }
@@ -89,7 +89,7 @@ function checkForWin (id) {
             return child.classList.contains('black')
             })
             if(win) {
-                displayWinner.innerText = 'Black won !'
+                displayWinner.innerText = '黒の勝ち!'
             }
         } 
         if(childList.length >= 5) {
@@ -97,7 +97,7 @@ function checkForWin (id) {
             return child.classList.contains('white')
             })
             if(win) {
-                displayWinner.innerText = 'White won !'
+                displayWinner.innerText = '白の勝ち!'
             }
         } 
     })
